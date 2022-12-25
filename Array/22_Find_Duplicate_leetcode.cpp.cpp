@@ -3,10 +3,10 @@ public:
     int findDuplicate(vector<int>& nums) 
     {
        sort(nums.begin(),nums.end());
-       int index=0;
+       int dup_ele=0;
       for(int i=0;i<nums.size()-1;i++){
           if(nums[i]==nums[i+1]){
-              index=nums[i];
+              dup_ele=nums[i];
           }
       }
 
