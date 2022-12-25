@@ -1,3 +1,5 @@
+//Intersection of arrays with no duplicate elements ex. arri=[4,5,6,7,9], arr2=[7,9,10,11]
+
 class Solution {
 public:
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2){
