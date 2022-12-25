@@ -15,5 +15,5 @@ int main(){
     int arr[9]={6,8,4,5,2,3,7,9,1};
     findPair(arr,9,10);
     
-    return 0;
+    return 0;;
 }
