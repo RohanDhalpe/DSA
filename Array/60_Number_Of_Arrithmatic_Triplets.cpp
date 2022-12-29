@@ -1,0 +1,19 @@
+class Solution {
+public:
+    int arithmeticTriplets(vector<int>& nums, int diff) {
+        int count=0;
+        unordered_map<int,bool>mp;
+        //Make occurance of each element in map
+        for(int i=0;i<nums.size();i++){
+            mp[nums[i]]=true;
+        }
+       
+        // For triplet check whether the given values are present or not.
+        for(int i=0;i<nums.size();i++){
+            if((mp[nums[i]-diff]) && (mp[nums[i]+diff])){
+                count++;
+            }
+        }
+    return count;
+    }
+};
