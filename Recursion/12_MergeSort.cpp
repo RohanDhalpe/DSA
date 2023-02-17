@@ -28,6 +28,7 @@ class Solution
         vector<int>ans;
         
         while(i<=mid && j<=high){
+            
             if(arr[i]<arr[j]){
                 ans.push_back(arr[i++]);
             }else{
@@ -41,11 +42,13 @@ class Solution
         while(j<=high){
              ans.push_back(arr[j++]);
         }
-       
-      int f=0; 
-      for(int k=low;k<=high;k++){
-          arr[k]=ans[f++];
-      }
+        
+
+        for(int k=low, j=0;k<=high;k++){
+            arr[k]=ans[j++];
+        }
+        
+      
     }
     public:
     void mergeSort(int arr[], int low, int high)
